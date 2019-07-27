@@ -1,0 +1,12 @@
+var
+  a = ["a", "a"];
+  b = ["b", "b", "b", "b"],
+  c = ["c", "c", "c"],
+  d = ["d"],
+  container = [a, b, c, d];
+
+container.sort(function (a, b) {
+  return a.length - b.length;
+});
+
+console.log(container);
