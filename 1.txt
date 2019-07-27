@@ -1,0 +1,19 @@
+{
+    name: "Pandu Ramadhan",
+    age: 28,
+    address: "Bejen, Caturharjo, Sleman",
+    hobbies: [
+        "Dota 2",
+        "Guitar"],
+    is_married: false,
+    list_school: [
+        name: "Universitas Amikom Yogyakarta",
+        year_in: 2011,
+        year_out: 2018,
+        major: "Information System"],
+    skills: [
+        skill_name: "HTML",
+        level: "expert"
+        ],
+    interest_in_coding: true,
+}

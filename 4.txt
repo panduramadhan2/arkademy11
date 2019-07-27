@@ -1,0 +1,12 @@
+      var txt = "Put Your Text Here To Search On It",
+                count = 0;
+            
+            for(var i = 0; i < txt.length; i++){
+                
+                if(txt.charAt(i) === 'r'){
+                    count++;
+                }
+                
+            }
+            console.log(count);
+            

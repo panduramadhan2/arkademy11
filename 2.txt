@@ -1,0 +1,9 @@
+function isAcceptedUsername(username) {
+    var Regexu = /^[a-z]{5,9}$/i ;
+    return Regexu.test(username) ;
+}
+
+function isAcceptedUsername(username) {
+    var Regexp = /^[a-zA-Z]{1}[0-9]{1}[\n\r\t\0]{1}[!@#\$%\^\&*\)\(+=._-]{1}{4,12}$/ ;
+    return Regexp.test(username) ;
+}
