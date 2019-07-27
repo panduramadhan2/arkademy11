@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JSON Data to HTML with jQuery</title>
+	<link href="w3.css" rel="stylesheet"/>
+</head>
+<body>
+<h3>Tabel Nama:</h3>
+	<div class="w3-container">
+		<p><br/></p>
+		<table class="w3-table w3-bordered w3-striped">
+			<thead>
+				<tr class="w3-green">
+					<th>id</th>
+					<th>name</th>
+					<th>id_work</th>
+					<th>id_salary</th>
+				</tr>
+			</thead>
+			<tbody id="Name">
+				<tr>
+					<td>[[id]]</td>
+					<td>[[name]]</td>
+					<td>[[idwork]]</td>
+					<td>[[idsalary]]</td>
+			</tbody>
+		</table>
+	</div>
+    
+    <script src="jquery.min.js"></script>
+    <script src="jquery.miranda.min.js"></script>
+    <script>
+        var list = [
+			{"id":1,"name":"Rebeca","idwork":1,"idsalary":1},
+			{"id":2,"name":"Vita","idwork":2,"idsalary":2}
+		];
+		$("#Name").mirandajs(list);
+	</script>
+	
+
+<h3>Tabel Work:</h3>
+	<div class="w3-container">
+		<p><br/></p>
+		<table class="w3-table w3-bordered w3-striped">
+			<thead>
+				<tr class="w3-green">
+					<th>id</th>
+					<th>name</th>
+					<th>id_salary</th>
+				</tr>
+			</thead>
+			<tbody id="Work">
+				<tr>
+					<td>[[id]]</td>
+					<td>[[namework]]</td>
+					<td>[[idsalary]]</td>
+			</tbody>
+		</table>
+	</div>
+    
+    <script src="jquery.min.js"></script>
+    <script src="jquery.miranda.min.js"></script>
+    <script>
+        var list = [
+			{"id":1,"namework":"Frontend Dev","idsalary":1},
+			{"id":2,"namework":"Backend Dev","idsalary":2}
+		];
+		$("#Work").mirandajs(list);
+	</script>
+	
+	<h3>Tabel Kategori:</h3>
+	<div class="w3-container">
+		<p><br/></p>
+		<table class="w3-table w3-bordered w3-striped">
+			<thead>
+				<tr class="w3-green">
+					<th>id</th>
+					<th>name</th>
+					<th>id_salary</th>
+				</tr>
+			</thead>
+			<tbody id="Category">
+				<tr>
+					<td>[[id]]</td>
+					<td>[[salary]]</td>
+			</tbody>
+		</table>
+	</div>
+    
+    <script src="jquery.min.js"></script>
+    <script src="jquery.miranda.min.js"></script>
+    <script>
+        var list = [
+			{"id":1,"salary":"10.000.000"},
+			{"id":2,"salary":"12.000.000"}
+		];
+		$("#Category").mirandajs(list);
+	</script>
+
+</body>
+</html>
